@@ -27,7 +27,7 @@ abstract class TestCase extends TestBench
     /**
      * Setup before each test.
      */
-    public function setUp(): void
+    protected function setUp(): void
     {
         $this->installTestApp();
         parent::setUp();
@@ -36,7 +36,7 @@ abstract class TestCase extends TestBench
     /**
      * Tear down after each test.
      */
-    public function tearDown(): void
+    protected function tearDown(): void
     {
         $this->uninstallTestApp();
         parent::tearDown();
